@@ -45,10 +45,67 @@
         echo "A variável A possui o maior valor e vale " . $a . "<br>";
     }
 
+
+
+    ?>
+
+
+    <?php
+
+        $a = 3;
+        $b = 15;
+        $c = 7;
+
+
+        function primo($numero) {
+
+            if ($numero < 2) {
+                return false;
+            }
+
+            if ($numero == 2) {
+                return true;
+            }
+
+            for ($i = 2; $i <= sqrt($numero); $i++) {
+                if ($numero % $i == 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        if (primo($a) == true) {
+            echo " <br> O número " . $a . " é primo.<br>";
+        } else if (primo($a) == false) {
+            echo " <br> O número " . $a . " não é primo.<br>";
+        }
+
+
+
+
+         echo "<br><br> <h1>Fatorial da varaiavel C </h1><br>";
+
+        $res = 1;
+
+        for( $i = 1; $i <= 10; $i++) {
+            $res = $res * $i;
+            echo "<br> $c x $i = " . $res;
+            
+
+        }
+
+        echo "<br><br>  O fatorial de <strong>" . $c . " é " . $res  . "</strong><br>";
     
 
     ?>
 
+
+
+    <?php 
+
+   
+    ?>
 
 
 
