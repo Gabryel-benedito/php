@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Formulário Base - Bootstrap 5.3</title>
+    <!-- CSS do Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2 class="mb-4">Formulário Base</h2>
+    <form action="processa_idade.php" method="POST">
+        <div class="mb-3">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome">
+        </div>
+
+        <div class="mb-3">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="exemplo@dominio.com">
+        </div>
+
+        <div class="mb-3">
+            <label for="idade" class="form-label">Idade</label>
+            <input type="number" class="form-control" id="idade" name="idade" placeholder="Digite sua idade" min="1">
+        </div>
+
+        <div class="mb-4">
+            <label for="faixa" class="form-label">Faixa Etária</label>
+            <select class="form-select" id="faixa" name="faixa">
+                <option value="" selected>Selecione sua faixa etária</option>
+                <option value="bebe">Bebê</option>
+                <option value="crianca">Criança</option>
+                <option value="adolescente">Adolescente</option>
+                <option value="adulto">Adulto</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+</div>
+
+<!-- JS do Bootstrap 5.3 (opcional, para componentes que usam JS) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
